@@ -21,6 +21,10 @@ namespace HashTables
             }
             Console.WriteLine("Displaying after add operation ");
             hashTabe.Display();
+            string s = "avoidable";
+            hashTabe.Remove(s);
+            Console.WriteLine("Displaying after Remove operation ");
+            hashTabe.Display();
         }
         static void Main(string[] args)
         {
