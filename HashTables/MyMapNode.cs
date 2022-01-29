@@ -16,7 +16,7 @@ namespace HashTables
         private readonly int size;
         //int[] arr;
         private readonly LinkedList<KeyValue<K,V>>[] items;
-        public MyMapNode(int size)
+        public MyMapNode(int size)// Creting a constructer to intilisize the values
         {
             this.size = size;
             //arr new int [size];
@@ -39,14 +39,14 @@ namespace HashTables
             }
             return default(V);
         }
-        public void Add(K key,V value)
+        public void Add(K key,V value) //this method for adding the elements
         {
             int position=GetArrayPosition(key);
             LinkedList<KeyValue<K, V>> linkedList = GetLinkedList(position);
             KeyValue<K, V> item = new KeyValue<K, V>() { Key=key,Value=value};
             linkedList.AddLast(item);
         }
-        public bool Exists(K key)
+        public bool Exists(K key) //this method for checking how many same elements in linked list
         {
             int position = GetArrayPosition(key);
             LinkedList<KeyValue<K,V>> linkedList= GetLinkedList(position);
@@ -69,7 +69,7 @@ namespace HashTables
             }
             return linkedList;
         }
-        public void Display()
+        public void Display() // this method for displying the elements in linked list
         {
             foreach(var linkedList in items)
             {

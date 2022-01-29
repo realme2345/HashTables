@@ -10,7 +10,7 @@ namespace HashTables
     {
         public static void CountNumberOfOccurance(string paragraph)
         {
-            MyMapNode<string, int> hashTabe = new MyMapNode<string, int>(6);
+            MyMapNode<string, int> hashTabe = new MyMapNode<string, int>(6); //creting object
             string[] words=paragraph.Split(' ');
             foreach (string Word in words)
             {
@@ -24,7 +24,7 @@ namespace HashTables
         }
         static void Main(string[] args)
         {
-            CountNumberOfOccurance("Hello World to the earth");
+            CountNumberOfOccurance("To be or not to be");
         }
     }
 }
