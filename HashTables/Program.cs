@@ -24,7 +24,8 @@ namespace HashTables
         }
         static void Main(string[] args)
         {
-            CountNumberOfOccurance("To be or not to be");
+            CountNumberOfOccurance("Paranoids are not paranoids because they are paranoids but beacause they keep putting themselves deliberately" +
+                "into a paranoids avoidable situations");
         }
     }
 }

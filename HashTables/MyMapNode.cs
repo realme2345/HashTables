@@ -73,13 +73,15 @@ namespace HashTables
         {
             foreach(var linkedList in items)
             {
-                if(linkedList != null)
-                    foreach(var element in linkedList)
+                if (linkedList != null)
+                {
+                    foreach (var element in linkedList)
                     {
-                        string res=element.ToString();
-                        if(res !=null)
-                            Console.WriteLine(element.Key +" " + element.Value);
+                        string res = element.ToString();
+                        if (res != null)
+                            Console.WriteLine(element.Key + " " + element.Value);
                     }
+                }
             }
         }
     }
